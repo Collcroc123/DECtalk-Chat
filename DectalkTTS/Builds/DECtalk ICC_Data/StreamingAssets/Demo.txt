@@ -1,0 +1,135 @@
+DEMO. 
+This is a demonstration of DECtalk Software text-to-speech technology.
+
+DECtalk Software comes with an easy to use Force Computers Application 
+Programming Interface, as well as Microsoft's Speech API, so you can 
+make your applications speak.
+
+The standard voices are Paul, [:nb] Betty, [:nh] Harry, 
+[:nd] Dennis,[:nf] Frank, [:nu] Ursula, [:nr] Rita, [:nw] Wendy, 
+[:nk] and I'm kit.
+
+[:np] DECtalk Software can play sound files, [:play demo.wav]
+dial telephone numbers, [:dial 1-800-297-4863] or generate tones.
+[:tone 440,1000][:tone 880,1000]
+
+DECtalk software has over 1,400 letter to sound rules, as well as
+extensive text preprocessing, so it can properly speak monetary text: $1.25,
+times: 12:31 pm, dates: Jan. 1, 1997, and phone numbers: 800-297-4863.
+
+Feel free to type a personal message and have DECtalk Sofware speak it.  Select
+the play button on the bottom right of this window, or highlight the text and 
+click your right mouse button.
+
+To find out how to use our in-line commands, such as changing voices, please
+open the COMMAND.TXT file.
+
+If you would like to find out how to order DECtalk Software, please open the
+ORDER.TXT file.  
+
+COMMANDS. 
+Communicating with DECtalk[R] Software.
+     
+The  primary function of DECtalk[R] Software is to convert ASCII text
+into synthesized speech output.  The DECtalk synthesizer includes its  
+own set of built in rules for text processing, as  well  as  a  large integral dictionary, 
+and application specific dictionaries can be created by the developer or user.
+In addition, a large number  of control and status functions are available, 
+these functions are  used to  modify  the  speech parameters of DECtalk Software.   
+Some of the functions include selecting the speaking voice,  rate, volume, 
+tone generation, and pause lengths. 
+
+SPEECH CONTROL.
+There are four ways to control speech in DECtalk Software:
+1. Through ASCII text.  DECtalk speaks this text as  written according
+to  a  set  of predefined rules. 
+
+2. Through phonemic spelling.  If you were to phonemicize the sentence  'This
+is  an  example of phonemic spelling', it would look like this: [:phoneme arpabet on]
+[dh'ihs ihz  axn ixgz'aempel axv  faxn'iymixk sp'ehlixnx].
+NOTE: To use phonemic symbols, the Phonemic spelling function it must be turned ON.
+
+4. Through voice control commands.  These commands
+control  features  of speech that are not obvious  from  the  visible
+text,  such  as  sex  of  the speaker, and excitement  level.  
+
+3. Through  speech control commands.  These easy to use,  in-line commands  
+control  the  overall  operation   of   the synthesizer  as  well as its many 
+special features.  Some examples of commonly used speech control commands are:
+
+Changing voices:  [:name Betty] like Betty, [:name harry] or Harry. [:name Paul] 
+Speaking  rate: [:rate 30] very slow, [:rate 400]or extremely fast, [:rate 200]
+Tone generation: [:tone 1000,400] 
+Spelling mode: [:say letter]test, [:say clause]
+Math mode: [:mode math on] (4 * 10) / 8 = 5.  [:mode math off]
+Speak through phoneme spelling:  [:phoneme arpabet on] [d'ehk#taok],
+or Dial tones: [:dial "1,800-297-4863"]
+
+EMAIL. 
+
+Due to the growing e-mail market, users want to have access to their e-mail via
+telephone. It is an important, however informal, mode of business communication. 
+It includes various abbreviations, acronyms, playful graphics and un-punctuated 
+sentences, which made e-mail reading almost impossible for most synthesizers.
+
+The DECtalk technology has now incorporated new, specialized rules to better speak 
+e-mail messages. This is accomplished by eliminating un-needed control information.
+and interpreting the typical short cuts used in e-mail messaging.
+ 
+In the example below, notice the e-mail header will be stripped to only speak the 
+date, subject and sender, while the footer will be completely removed.  Also note 
+that the abbreviations are expanded to their true form, E S T will be read as 
+Eastern Standard Time and St. James St. will be voiced as Saint James Street. 
+
+[:mode email on]
+From John Doe  Wed Aug 7 18:07:28 EST
+Return-Path: <john@node.com>
+Received: from home.node.com ([127.0.0.1]) by smtp.node.com
+Message-ID:  <32FB6581.581A@smtp.node.com>
+Date: Wed, 7 Aug 1996 18:07:28 EST
+From:  john@node.com (John Doe)
+Reply-To:  john@node.com
+Organization:  Force Computers Incorporated
+X-Mailer:  ELM
+MIME-Version: 1.0
+To: jane@node.com
+Subject: DECtalk Parsing
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Mozilla-Status: 0001
+
+Hi Jane,
+
+At 11:52 EST on Wed Aug 7, I found a great web site.  It's a Force Computer
+Incorporated web site all about the DECtalk products.  Take a look at URL:
+
+http://www.forcecomputers.com/product/dectalk/dtalk.htm
+
+Let me know what you think by mailing me at: john@aol.node.com
+or snail mail at: John Doe, 4321 St. James St., Mt. View, CA 12345-6789,
+phone (123) 297-4863.  Or write to Dr. John Doe, 10 42nd St., Boston, MA 01234, 
+phone 617-546-2345.
+	
+See ya!   :-) 
+
+John		
+
+% ====== Internet headers and postmarks (see DECWRL::GATEWAY.DOC) ======
+% Received: from smtp.node.com by node.com (5.65/rmc-22feb94) id AA17792; Wed, 7 Aug 96 22:47:37 -0400
+% Received: from node.com by node.com (8.7.5/UNX 1.2/1.0/WV) id WAA13939; Wed, 7 Aug 1996 22:35:28 -0400 (EDT)
+% Received: from node.com (smtp.node.com [127.0.0.1]) by worldaccess.com (8.6.10/8.6.10) with SMTP id TAA10463 for <jane@node.com>; Wed, 7 Aug 1996 19:33:57 -0700
+% Message-Id: <32094F06.4045@node.com>
+% Date: Wed, 07 Aug 1996 19:20:54 -0700
+% From: john Doe <John@node.com>
+% Organization: Force Computers Incorporated
+% X-Mailer: ELM
+% Mime-Version: 1.0
+% To: "Jane Smith, jane@node.com"
+% Subject: Re: DECtalk Parsing
+% References: <9608071721.AA16334@node.com>
+% Content-Type: text/plain; charset=us-ascii
+% Content-Transfer-Encoding: 7bit
+
+[:mode email off]
+
+END OF FILE.
